@@ -12,7 +12,7 @@
 
         $prvi_inicijal = substr ($ime_i_prezime, 0, 1);
         $drugi_inicijal = strpos ($ime_i_prezime, " ");
-        $drugi_inicijal2 = $drugi_inicija + 1;
+        $drugi_inicijal2 = $drugi_inicijal + 1;
         $drugi_inicijal3 = substr ($ime_i_prezime, $drugi_inicijal2, 1);
 
         echo "$prvi_inicijal.$drugi_inicijal3.";
