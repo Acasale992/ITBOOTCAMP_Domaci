@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        .pozadina {
+            background: cadetblue url("plavo.jpg") repeat center / cover;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 250px;
+            height: 100%; 
+        }
+        h4 {text-align: center;
+            background: #19dada;
+            margin-top: 0px;
+            line-height: 2em;
+        }
+        .forma {
+            width: 96%;
+        }
+        .forma input { 
+            line-height: 2em;
+        }
+        .submit {   
+            border:0; 
+            width: 104%;
+            text-align: center;
+            background: #19dada;
+            line-height: 2em;
+            color: white;
+        }
+        .polje {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .polje2 {
+            width: 101%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="pozadina">
+            <h4>Contact Us</h4>
+            <form class="forma" method="post" action="server.php" target="_blank">
+                <p>
+                    <input class="polje" id="name_input_id" name="name_za_php" type="text" placeholder="Your Name" />
+                </p>
+                <p>
+                    <input class="polje" type="email" placeholder="Email address" />
+                </p>
+                <p>
+                    <textarea class="polje2" placeholder="Type your message" ></textarea>
+                </p>
+                    <input class="submit" type="submit" value="Send" />
+            </form>
+    </div>
+</body>
+</html>

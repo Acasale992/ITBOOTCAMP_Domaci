@@ -1,0 +1,360 @@
+/* Prešao 100 linija koda, šta da se radi :) */
+
+/* General */ 
+
+body, body *{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: url(slike/pozadina.jpg) repeat center / cover;
+    height: 100vh;
+}
+ul li{
+    list-style-type: none;
+}
+
+/* General */ 
+
+/* Header */
+.header {
+    width: 60vw;
+    height: 17vh;
+    position: relative;
+    top:2%; left:20%;            
+}
+p.ime {
+    position: relative;
+    left: 120px;
+    font-size: 40px;
+    color: turquoise;
+    display: inline; 
+}    
+p.cv {
+    position: relative;
+    left: 120px;
+    font-style: italic;
+    font-size: 20px;
+    color: turquoise;
+}
+.moja_slika {
+    height: 100%;
+    position: absolute;
+    outline: 1px solid turquoise;
+}       
+.nazad {
+    float: right;
+    width: 50px;
+    position: relative;
+    top: 40px;
+    left: -10px;
+}
+/* Header */
+
+/* Body */
+
+/* Index page */
+
+div.index {
+    width: 60vw;
+    height: 70vh;
+    position: absolute;
+    top:20%; left:20%;
+    background: rgba(0, 0, 0, 0.4);
+}
+div.index div{
+    width: 48.8%;
+    height: 48.8%;
+    border: 1px solid turquoise;
+    display: inline-block;
+    margin: 3px;
+    padding: 30px;
+    line-height: 2em;
+}
+div.o-meni {
+    background-image: url(slike/meni/meni1.png);
+    background-size: cover;
+}
+div.iskustvo {
+    background-image: url(slike/meni/meni2.png);
+    background-size: cover;
+}
+div.projekti {
+    background-image: url(slike/meni/meni3.png);
+    background-size: cover;
+}
+div.kontakt {
+    background-image: url(slike/meni/meni4.png);
+    background-size: cover;
+}
+div.index div a {
+    width:100%;
+    height:100%;
+    display:block;
+    text-decoration: none;
+}
+.naslov {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+.opis {
+    color: turquoise;
+    font-size: small;
+}
+
+/* Index page */
+
+/* O meni page */
+
+#stranica {
+    width: 60vw;
+    height: 70vh;
+    position: absolute;
+    top:20%; left:20%;
+    background: rgba(0, 0, 0, 0.4);
+}
+div.o-meni1 {
+    position:absolute;
+    margin: 3px;
+    background: url("slike/meni/meni1.png") no-repeat center;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+    border: 1px solid turquoise;
+}
+div.o-meni1 a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+.naslov-page {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    position: absolute;
+    left: 0; width: 100%;
+    top:50%; transform: translate(0,-50%);
+}
+div.navigacija {
+    position:absolute;
+    margin: 3px;
+    margin-top: 5px;
+    background: rgb(58, 58, 58);
+    border: 1px solid turquoise;
+    width: 30%;
+    height: 73%;
+    top: 25%;
+    text-align: center;
+    line-height: 2em;
+}
+div.navigacija ul{
+    position: absolute;
+    left: 0; width: 100%;
+    top:50%; transform: translate(0,-50%);
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+div.navigacija a{
+    text-decoration: none;
+    color: white;
+}
+#stranica1 {
+    position: absolute;
+    width: 69%;
+    height: 98.5%;
+    left: 30%;
+    margin-left: 5px;
+    padding: 15px;
+    overflow: auto;
+}
+div.o-meni2, .iskustvo2 h1 {
+    color:white;
+}
+div.o-meni2 a{
+    color: teal;
+}
+div.o-meni2, .kontakt2, .iskustvo2 p{
+    color: rgb(196, 196, 196);
+    padding: 10px;
+}
+span {
+    font-style: italic;
+    color: wheat;
+}
+div.info {
+    padding: 40px;
+    line-height: 2em;
+}
+ul.levo {
+    float: left;
+}
+ul.desno {
+    float: right;
+}
+
+/* O meni page */
+
+/* Projekti page */
+
+div.projekti1 {
+    position:absolute;
+    margin: 3px;
+    background: url("slike/meni/meni3.png") no-repeat center;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+    border: 1px solid turquoise;
+}
+div.projekti1 a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+div.projekti2 ul {
+    list-style-type: none;
+    color: white;
+    width: 100%;
+}
+div.projekti2 li{
+    display: inline-block;
+    width: 45%;
+    line-height: 1.4em;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.galerija {
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+}
+div.projekti2 a {
+    font-style: italic;
+    color: turquoise;
+}
+div.projekti2 h3 {
+    font-weight: lighter;
+}
+
+/* Projekti page */
+
+/* Iskustvo page */
+
+div.iskustvo1 {
+    position:absolute;
+    margin: 3px;
+    background: url("slike/meni/meni2.png") no-repeat center;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+    border: 1px solid turquoise;
+}
+div.iskustvo1 a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+#ikonice {
+    height: 110px;
+    float: left;
+    clear: both;
+    margin-right: 10px;    
+}
+#razmak {
+    margin-bottom: 20px;
+}
+/* Iskustvo page */
+
+/* Kontakt page */
+
+div.kontakt1 {
+    position:absolute;
+    margin: 3px;
+    background: url("slike/meni/meni4.png") no-repeat center;
+    width: 30%;
+    height: 25%;
+    text-align: center;
+    border: 1px solid turquoise;
+}
+div.kontakt1 a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+div.kontakt2 h1 {
+    color:white;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+div.forma {
+    width: 50%;
+    color: white;
+    padding: 10px;
+    font-size: small;
+    line-height: 1.8em;
+    float: left;
+}
+input {
+    font-style: italic;
+    color: silver;
+    width: 100%;
+}
+.submit {
+    background-color: turquoise;
+    border: none;
+    color:rgb(58, 58, 58)
+}
+div.forma p{
+    line-height: 1em;
+}
+textarea {
+    width: 100%;
+}
+div.iframe {
+    margin-left: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 45%;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+}
+div.social {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    padding: 50px;
+}
+img.fb {
+    width: 75px;
+    border-radius: 50%;
+    float: left;
+}
+img.insta {
+    width: 75px;
+    border-radius: 50%;
+    float: right;
+}
+
+/* Kontakt page */
+
+/* Body */
+
+/* Footer */
+
+.copyright {
+    position: relative;
+    top: 95%;
+    text-align: center;
+    color: white;
+    font-size: small;
+    font-style: italic;
+}
+
+/* Footer */

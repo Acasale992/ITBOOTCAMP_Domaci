@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    line-height: 1.5em;
+}
+        div {
+            width: 500px;
+            height: 250px;
+            padding: 30px;
+            background-color: lightgray;
+        }
+        table {
+            width: 500px;
+            text-align: right;
+        }
+        caption {
+            background-color: rgb(253, 98, 42);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        table tr:nth-child(even) {
+            background: rgb(247, 182, 159);
+            border-bottom: 1px solid orangered;
+        }
+        table tr:nth-child(odd) {
+            border-bottom: 1px solid orangered;
+        }
+        .head {
+            background: rgb(247, 182, 159);
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+            border-bottom: 1px solid orangered;
+        }
+        #footer {
+            background: rgb(54, 53, 53);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: none;
+            }
+        tbody tr td:first-of-type{text-align:left;}
+        #border {border-right: 1px solid grey;}
+    </style>
+</head>
+<body>
+    <body>
+        <div>
+            <table>
+                <caption>Employee Timecard</caption>
+                    <thead>
+                        <tr class="head">
+                            <th id="border">Day</th>
+                            <th id="border">Regular</th>
+                            <th id="border">Overtime</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dani">
+                            <td id="border">Monday</td>
+                            <td id="border">8</td>
+                            <td id="border">0</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td id="border">Tuesday</td>
+                            <td id="border">8</td>
+                            <td id="border">2.5</td>
+                            <td>10.5</td>
+                        </tr>
+                        <tr>
+                            <td id="border">Wednesday</td>
+                            <td id="border">8</td>
+                            <td id="border">0</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td id="border">Thursday</td>
+                            <td id="border">8</td>
+                            <td id="border">0</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td id="border">Friday</td>
+                            <td id="border">8</td>
+                            <td id="border">0</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td id="border">Saturday</td>
+                            <td id="border">0</td>
+                            <td id="border">5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td id="border">Sunday</td>
+                            <td id="border">0</td>
+                            <td id="border">1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr id="footer">
+                            <td  colspan="3" id="border">Total weekly hours:</td>
+                            <td>48.5</td>
+                        </tr>
+                    </tfoot>
+            </table>
+        </div>
+</body>
+</html>

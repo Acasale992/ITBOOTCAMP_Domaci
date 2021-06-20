@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your payment details</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input {
+            border: 0;
+            border-bottom: 1px solid silver;
+        }
+        input:focus {
+            background-color: springgreen;
+            border: 5px double red;
+        }
+        .creditcard {
+            background: url("cc.png") no-repeat left / contain;
+        } 
+        .checkbox {
+            vertical-align: middle;
+        }
+        p {
+            font-size: 11px;
+        }
+        .submit {
+            width: 100px; height: 40px;
+            text-transform: uppercase;
+            color: white;
+            background: rgb(0, 255, 64);
+            box-shadow: 0 10px 20px grey;
+        }
+        .cvc {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h4>Your payment details</h4>
+    <form method="POST" action="server.php" target="_blank">
+        <p>
+            <label>NAME</label><br>
+            <input id="name_input_id" name="name_za_php" type="text" />
+        </p>
+        <p>
+            <label>CARD NUMBER</label><br>
+            <input class="creditcard" type="text" />
+        </p>
+        <p class="expirationdate">
+            <label>EXPIRATION DATE</label><br>
+            <input class="cvc" type="text" placeholder="MM" />
+            <input class="cvc" type="text" placeholder="YY" />
+        </p>
+        <p>
+            <label>CVC</label><br>
+            <input class="cvc" type="text" placeholder="123" />
+        </p>
+        <p>
+            <input class="checkbox" type="checkbox" checked/>Save my card for future purchases        
+        </p>
+            <input class="submit" type="submit" value="Pay now" />
+    </form>
+</body>
+</html>

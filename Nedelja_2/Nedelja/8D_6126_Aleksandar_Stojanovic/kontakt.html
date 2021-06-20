@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Dobrodošli na ličnu prezentaciju Aleksandra Stojanovića" >
+    <title>Aleksandar Stojanović - Kontakt</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="header">
+        <img class="moja_slika" src="slike/me.jfif" alt="moja slika" />
+        <a href="index.html"><img class="nazad" src="slike/nazad1.png" alt="nazad" /></a>
+        <p class="ime">Aleksandar Stojanović</p></br></br>
+        <p class="cv">Biografija</p>
+    </div>
+    <div id="stranica">
+        <div class="kontakt1">
+            <a href="index.html">
+            <span class="naslov-page">Kontakt</span></br>
+            </a>
+        </div>
+        <div class="navigacija">
+            <ul>
+                <li><a href="o-meni.html">O meni</a></li>
+                <li><a href="iskustvo.html">Iskustvo</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div id="stranica1" class="kontakt2">
+            <h1>Ko sluša zna, ko čuje razume</h1>
+            <div class="forma">
+                <form method="POST" action="server.php" target="_blank">
+                    <label>Ime</label><br>
+                    <input id="name_input_id" name="name_za_php" type="text" placeholder="Unesite svoje ime*" required/><br>
+                    <label>E-mail</label><br>
+                    <input type="email" placeholder="Unesite svoju e-mail adresu*" required/><br>
+                    <label>Kontakt telefon</label><br>
+                    <input type="tel" placeholder="Unesite svoj kontakt telefon*" required/> <br>
+                    <label>Izaberite vrstu upita</label><br>
+                    <select name="vrsta-upita">
+                        <option value="1">Izrada web stranice</option>
+                        <option value="2">Redizajn postojeće stranice</option>
+                        <option value="3">Hosting i domen</option>
+                        <option value="4">Ostalo</option>
+                    </select>
+                    <label>Poruka</label><br>
+                    <textarea rows="4" name="poruka" placeholder="Unesite detalje"></textarea>
+                    <input class="submit" type="submit" value="POŠALJI">
+                </form>
+                <p>Polja označena zvezdicom * su obavezna.</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/BooSTER92/" target="_blank"><img class="fb" src="slike/fb.png" /></a>
+                <a href="https://www.instagram.com/alksndr_92/" target="_blank"><img class="insta" src="slike/insta.jpg" /></a>
+            </div>
+            <div class="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11326.828638158719!2d20.504484599999998!3d44.78677514999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1620066390416!5m2!1ssr!2srs" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">Copyright - Aleksandar Stojanović 2021</p>
+</body>
+</html>

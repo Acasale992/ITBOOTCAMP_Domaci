@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meni</title>
+    <style>
+        ul { 
+            padding:200;
+        }
+        span {
+            padding: 10px;
+            cursor: grab;
+        }
+        li.podmeni{ 
+            border:1px solid black; 
+            list-style-type:none;
+            position:relative;
+            display: inline;
+            cursor:move;
+        }
+        li{ 
+            list-style-type:none;
+        }
+        ul.podpodmeni{ 
+            display:none;
+            position: absolute;
+            top:15;
+            left:0;
+            padding: 2px;
+        }
+        li:hover ul{ 
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="podmeni">
+            <span>Stavka 1</span>
+                <ul class="podpodmeni">
+                    <li>podmeni 1</li>
+                    <li>podmeni 2</li>
+                    <li>podmeni 3</li>
+                    <li>podmeni 4</li>
+                </ul>
+            
+        </li>
+        <li class="podmeni">
+            <span>Stavka 2</span>
+                <ul class="podpodmeni">
+                    <li>podmeni 1</li>
+                    <li>podmeni 2</li>
+                    <li>podmeni 3</li>
+                    <li>podmeni 4</li>
+                </ul>
+            
+        </li>
+        <li class="podmeni">
+            <span>Stavka 3</span>
+                <ul class="podpodmeni">
+                    <li>podmeni 1</li>
+                    <li>podmeni 2</li>
+                    <li>podmeni 3</li>
+                    <li>podmeni 4</li>
+                </ul>
+            
+        </li>
+        <li class="podmeni">
+            <span>Stavka 4</span>
+                <ul class="podpodmeni">
+                    <li>podmeni 1</li>
+                    <li>podmeni 2</li>
+                    <li>podmeni 3</li>
+                    <li>podmeni 4</li>
+                </ul>
+            
+        </li>
+    </ul>
+</body>
+</html>

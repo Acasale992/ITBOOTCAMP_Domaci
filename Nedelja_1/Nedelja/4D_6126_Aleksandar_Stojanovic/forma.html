@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za sportiste</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form { background-color: cornflowerblue; }
+        .ime { background-color: blue; }
+        .iskoseno-ime { font-style: italic; }
+        .prezime { color: crimson; }
+        .email { background-color: darkgoldenrod; }
+        .podebljano {font-weight: bold;}
+    </style>
+</head>
+<body>
+    <form method="POST" action="server.php" target="_blank" style="font-size:20px;" >
+        <h1>Konkurs za sportistu godine (samo za punoletne)</h1>
+        <p>
+            <label class="iskoseno-ime" for="1">Ime:</label>
+            <input class="ime" id="1" type="text" name="ime" placeholder="ukucajte ime" required />
+        </p>
+        <p>
+            <label for="2">Prezime</label>
+            <input class="prezime" id="2" type="text" name="prezime" placeholder="ukucajte prezime" required />
+        </p>
+        <p>
+            <label class="iskoseno-ime ime" for="3">Koliko imate godina?</label>
+            <input id="3" type="number" name="godine" value="25" min="18" required />
+        </p>
+        <p>
+            <label for="4">E-mail adresa</label>
+            <input class="email" id="4" type="e-mail" name="@" placeholder="ukucajte e-mail" required />
+        </p>
+        <p>
+            <label class="podebljano" for="5">Lozinka</label>
+            <input id="5" type="password" name="pass" placeholder="ukucajte lozinku" minlength="10" required />
+        </p>
+        <p>
+            <label class="podvuceno prezime email">Pol</label><br>
+            <input type="radio" name="pol" value="m" />Muški<br>
+            <input type="radio" name="pol" value="z" />Zenski<br>
+        </p>
+        <p>
+            <label for="6">Sportom se bavim:</label>
+            <select id="6" name="nivo" class="rookie">
+                <option class="rookie" value="p">Profesionalno</option>
+                <option value="pp">Polu-profesionalno</option>
+                <option value="r">Rekreativno</option>
+            </select>
+        </p>
+        <p>
+            <label class="choose">Timski sam igrač:</label><br>
+            <input type="checkbox" name="a" />Tačno<br>
+            <input type="checkbox" name="b" />Netačno<br>
+        </p>
+        <p>
+            <label for="7">Priložite svoju biografiju</label>
+            <input class="file" id="7" name="cv" type="file" required />
+        </p>
+        <p>
+            <textarea rows="8" cols="40" name="bio" placeholder="Opišite svoj dan" required></textarea><br>
+        </p>
+        <p>
+            <input class="done" type="submit" value="POŠALJI" />
+        </p>
+    </form>
+</body>
+</html>

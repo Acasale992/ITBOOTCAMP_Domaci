@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV</title>
+    <style>
+        body, body *{
+            margin: 0; 
+            padding:0;
+        }
+        div {
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            position: fixed;
+            top:10%; left:10%;
+            background: url(slika.jpg) no-repeat center / cover;
+        }
+        img {
+            width: 30px;
+            float: left;
+            transition: width 1s; 
+        }
+        p {   /* paragraf je ubačen kako bih definisao širinu i u odnosu na nju postavio 120% za hover stanje sličice X, jer se % računa u odnosu na roditelja. */
+            width:30px;
+        }
+        img:hover {
+            cursor: not-allowed;
+            width: 120%; /* Pretpostavljam da je moglo i samo 36px što je 20% više u odnosu na definisanu širinu slike? Molim Vas da mi na slacku pošaljete odgovor da bih znao za buduće, hvala unapred! :) */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <img src="x.png" alt="X" />
+        </p>
+    </div>
+</body>
+</html>
